@@ -1,0 +1,74 @@
+{
+  "SICREDI": [
+    { "PERIODO": "jan-24", "SALDO Inicial": 1809082.07, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 14858.20, "Saldo Final": 1823940.27 },
+    { "PERIODO": "fev-24", "SALDO Inicial": 1823940.27, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 16022.35, "Saldo Final": 1839962.62 },
+    { "PERIODO": "mar-24", "SALDO Inicial": 1839962.62, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 15226.08, "Saldo Final": 1855188.70 },
+    { "PERIODO": "abr-24", "SALDO Inicial": 1855188.70, "RESGATE": 70022.38, "APLICAÇÃO": 0.00, "RENDIMENTO": 9270.86, "Saldo Final": 1794437.18 },
+    { "PERIODO": "mai-24", "SALDO Inicial": 1794437.18, "RESGATE": 0.00, "APLICAÇÃO": 12471.38, "RENDIMENTO": 0.00, "Saldo Final": 1806908.56 }
+  ],
+  "XP": [
+    { "PERIODO": "jan-24", "SALDO Inicial": 3791799.00, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 29879.19, "Saldo Final": 3821678.19 },
+    { "PERIODO": "fev-24", "SALDO Inicial": 3821678.19, "RESGATE": 0.00, "APLICAÇÃO": 200000.00, "RENDIMENTO": 21901.25, "Saldo Final": 4043579.44 },
+    { "PERIODO": "mar-24", "SALDO Inicial": 4043579.44, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 48250.24, "Saldo Final": 4091829.68 },
+    { "PERIODO": "abr-24", "SALDO Inicial": 4091829.68, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 30923.85, "Saldo Final": 4122753.53 },
+    { "PERIODO": "mai-24", "SALDO Inicial": 4122753.53, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 35248.75, "Saldo Final": 4158002.28 }
+  ],
+  "CAIXA": [
+    { "PERIODO": "jan-24", "SALDO Inicial": 316853.24, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 2358.59, "Saldo Final": 319211.83 },
+    { "PERIODO": "fev-24", "SALDO Inicial": 319211.83, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 2575.70, "Saldo Final": 321787.53 },
+    { "PERIODO": "mar-24", "SALDO Inicial": 321787.53, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 2352.74, "Saldo Final": 324140.27 },
+    { "PERIODO": "abr-24", "SALDO Inicial": 324140.27, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 2489.76, "Saldo Final": 326630.03 },
+    { "PERIODO": "mai-24", "SALDO Inicial": 326630.03, "RESGATE": 0.00, "APLICAÇÃO": 17100.00, "RENDIMENTO": 179.71, "Saldo Final": 343909.74 }
+  ],
+  "BB": [
+    { "PERIODO": "jan-24", "SALDO Inicial": 2017817.16, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": -1517.87, "Saldo Final": 2016299.29 },
+    { "PERIODO": "fev-24", "SALDO Inicial": 2016299.29, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 14518.57, "Saldo Final": 2030817.86 },
+    { "PERIODO": "mar-24", "SALDO Inicial": 2030817.86, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 21528.82, "Saldo Final": 2052346.68 },
+    { "PERIODO": "abr-24", "SALDO Inicial": 2052346.68, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": -7803.08, "Saldo Final": 2044543.60 },
+    { "PERIODO": "mai-24", "SALDO Inicial": 2044543.60, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": -1729.44, "Saldo Final": 2042814.16 }
+  ],
+  "Itau": [
+    { "PERIODO": "jan-24", "SALDO Inicial": 2782165.57, "RESGATE": 0.00, "APLICAÇÃO": 500000.00, "RENDIMENTO": 31073.56, "Saldo Final": 3313239.13 },
+    { "PERIODO": "fev-24", "SALDO Inicial": 3313239.13, "RESGATE": 0.00, "APLICAÇÃO": 700000.00, "RENDIMENTO": 31767.60, "Saldo Final": 4045006.73 },
+    { "PERIODO": "mar-24", "SALDO Inicial": 4045006.73, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 14876.74, "Saldo Final": 4059883.47 },
+    { "PERIODO": "abr-24", "SALDO Inicial": 4059883.47, "RESGATE": 0.00, "APLICAÇÃO": 1000000.00, "RENDIMENTO": 24942.73, "Saldo Final": 5084826.20 },
+    { "PERIODO": "mai-24", "SALDO Inicial": 5084826.20, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 38501.73, "Saldo Final": 5123327.93 }
+  ],
+  "Bradesco": [
+    { "PERIODO": "jan-24", "SALDO Inicial": 330546.04, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 3440.68, "Saldo Final": 333986.72 },
+    { "PERIODO": "fev-24", "SALDO Inicial": 333986.72, "RESGATE": 11923.22, "APLICAÇÃO": 142745.49, "RENDIMENTO": 1566.44, "Saldo Final": 466375.43 },
+    { "PERIODO": "mar-24", "SALDO Inicial": 466375.43, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 3844.86, "Saldo Final": 470220.29 },
+    { "PERIODO": "abr-24", "SALDO Inicial": 470220.29, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 3415.76, "Saldo Final": 473636.05 },
+    { "PERIODO": "mai-24", "SALDO Inicial": 473636.05, "RESGATE": 0.00, "APLICAÇÃO": 0.00, "RENDIMENTO": 3193.29, "Saldo Final": 476829.34 }
+  ],
+  "ACENTRA": [
+    { "PERIODO": "jan-24", "SALDO Inicial": 881828.39, "RESGATE": 0.00, "APLICAÇÃO": 58.60, "RENDIMENTO": 8338.28, "Saldo Final": 890225.27 },
+    { "PERIODO": "fev-24", "SALDO Inicial": 890225.27, "RESGATE": 0.00, "APLICAÇÃO": 58.60, "RENDIMENTO": 7686.72, "Saldo Final": 897970.59 },
+    { "PERIODO": "mar-24", "SALDO Inicial": 897970.59, "RESGATE": 0.00, "APLICAÇÃO": 58.60, "RENDIMENTO": 7264.38, "Saldo Final": 905293.57 },
+    { "PERIODO": "abr-24", "SALDO Inicial": 905293.57, "RESGATE": 0.00, "APLICAÇÃO": 58.60, "RENDIMENTO": 8608.82, "Saldo Final": 913960.99 },
+    { "PERIODO": "mai-24", "SALDO Inicial": 913960.99, "RESGATE": 0.00, "APLICAÇÃO": 58.60, "RENDIMENTO": 7416.94, "Saldo Final": 921436.53 }
+  ],
+  "Benchmarks": {
+    "CDI": [
+      { "PERIODO": "jan-24", "VALOR": 0.0110 },
+      { "PERIODO": "fev-24", "VALOR": 0.0111 },
+      { "PERIODO": "mar-24", "VALOR": 0.0110 },
+      { "PERIODO": "abr-24", "VALOR": 0.0110 },
+      { "PERIODO": "mai-24", "VALOR": 0.0111 }
+    ],
+    "IPCA": [
+      { "PERIODO": "jan-24", "VALOR": 0.0040 },
+      { "PERIODO": "fev-24", "VALOR": 0.0041 },
+      { "PERIODO": "mar-24", "VALOR": 0.0042 },
+      { "PERIODO": "abr-24", "VALOR": 0.0043 },
+      { "PERIODO": "mai-24", "VALOR": 0.0044 }
+    ],
+    "Ibovespa": [
+      { "PERIODO": "jan-24", "VALOR": 0.0150 },
+      { "PERIODO": "fev-24", "VALOR": 0.0155 },
+      { "PERIODO": "mar-24", "VALOR": 0.0160 },
+      { "PERIODO": "abr-24", "VALOR": 0.0165 },
+      { "PERIODO": "mai-24", "VALOR": 0.0170 }
+    ]
+  }
+}
