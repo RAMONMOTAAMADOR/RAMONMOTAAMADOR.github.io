@@ -4,7 +4,7 @@ const investmentData = [
     { bank: 'XP', startBalance: 3791799.00, investments: 200000, redemptions: 0, endBalance: 4158002.28, returns: [0.79, 0.57, 1.19, 0.76, 0.85] },
     { bank: 'Caixa', startBalance: 316853.24, investments: 17100, redemptions: 0, endBalance: 343909.74, returns: [0.74, 0.81, 0.73, 0.77, 0.06] },
     { bank: 'BB', startBalance: 2017817.16, investments: 0, redemptions: 0, endBalance: 2042814.16, returns: [-0.08, 0.72, 1.06, -0.38, -0.08] },
-    { bank: 'Itaú', startBalance: 2782165.57, investments: 1700000, redemptions: 0, endBalance: 5123327.93, returns: [1.12, 0.96, 0.37, 0.61, 0.76] },
+    { bank: 'Itaú', startBalance: 2782165.57, investments: 2200000, redemptions: 0, endBalance: 5123327.93, returns: [1.12, 0.96, 0.37, 0.61, 0.76] },
     { bank: 'Bradesco', startBalance: 330546.04, investments: 142745.49, redemptions: 11923.22, endBalance: 476829.34, returns: [1.04, 0.47, 0.82, 0.73, 0.67] },
     { bank: 'Acentra', startBalance: 881828.39, investments: 58.60, redemptions: 0, endBalance: 921436.53, returns: [0.95, 0.86, 0.81, 0.95, 0.81] }
 ];
@@ -27,17 +27,21 @@ function populateTable(data) {
     let totalRedemptions = 0;
 
     data.forEach(item => {
-        const row = document.createElement('tr');
         const profit = item.endBalance - item.startBalance - item.investments + item.redemptions;
-        const returnPercentage = ((item.endBalance - item.startBalance - item.investments + item.redemptions) / (item.startBalance + item.investments)) * 100;
+        const numberOfMonths = item.returns.length;
+        const averageReturn = item.returns.reduce((a, b) => a + b, 0) / numberOfMonths;
+        const returnPercentage = averageReturn * numberOfMonths; // Corrigido
+
+        const row = document.createElement('tr');
         row.innerHTML = `
             <td>${item.bank}</td>
             <td>${item.startBalance.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
             <td>${item.investments.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
             <td>${item.redemptions.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
             <td>${item.endBalance.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
-            <td>${returnPercentage.toFixed(2)}%</td>
+            <td>${returnPercentage.toFixed(2)}%</td> <!-- Corrigido -->
             <td>${profit.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+            <td>${averageReturn.toFixed(2)}%</td>
         `;
         tableBody.appendChild(row);
 
@@ -157,7 +161,10 @@ function generateTotalReturnsChart(data) {
             plugins: {
                 tooltip: {
                     callbacks: {
-                        label: context => `${context.dataset.label || ''}: ${context.raw.toFixed(2)}%`
+                        label: context => {
+                            const label = context.dataset.label || '';
+                            return label ? `${label}: ${context.raw.toFixed(2)}%` : null;
+                        }
                     }
                 },
                 title: {
@@ -207,7 +214,7 @@ function generatePieChart(data) {
     });
 }
 
-// Função para gerar o gráfico de barras de rentabilidade percentual dos bancos
+// Função para gerar o gráfico de barras da rentabilidade percentual média dos bancos
 function generateBarChart(data) {
     const ctx = document.getElementById('barChart').getContext('2d');
     const sortedData = data.map(item => {
@@ -346,6 +353,6 @@ document.addEventListener('DOMContentLoaded', () => {
     generateComparisonChart(investmentData);
     generateTotalReturnsChart(investmentData);
     generatePieChart(investmentData);
-    generateRankingChart(investmentData);
-    generateBarChart(investmentData); // Gera o gráfico de barras
+    generateBarChart(investmentData); // Gera o gráfico de barras verde
+    generateRankingChart(investmentData); // Gera o gráfico de barras laranja
 });
