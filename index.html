@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Investimentos 2024</title>
+    <title>Dashboard de Investimentos</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -30,51 +30,38 @@
             margin-bottom: 5px;
         }
 
-        /* Estilo para dispor os gráficos e tabelas horizontalmente */
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .charts {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-
         .chart {
-            flex: 1 1 calc(50% - 20px); /* Ajusta o tamanho dos gráficos */
-            max-width: calc(50% - 20px);
-            box-sizing: border-box;
+            margin: 20px 0;
         }
 
-        .tables {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        #comparisonChart,
+        #totalReturnsChart {
+            height: 250px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
+        #pieChart,
+        #barChart,
+        #rankingChart {
+            height: 300px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Dashboard de Investimentos 2024</h1>
+
+        <!-- Removido a seção de filtros -->
+        <!-- 
+        <div class="filters">
+            <label for="start-date">Data de início:</label>
+            <input type="date" id="start-date">
+
+            <label for="end-date">Data de término:</label>
+            <input type="date" id="end-date">
+
+            <button id="filter-button">Filtrar</button>
+        </div>
+        -->
 
         <div class="charts">
             <div class="chart">
@@ -106,6 +93,7 @@
                         <th>Saldo Final</th>
                         <th>Retorno %</th>
                         <th>Lucro</th>
+                        <th>Rentabilidade Média</th> <!-- Nova coluna -->
                     </tr>
                 </thead>
                 <tbody id="table-body">
@@ -113,7 +101,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="7">
+                        <td colspan="8"> <!-- Ajustado o colspan para incluir a nova coluna -->
                             <div class="total-boxes">
                                 <div class="total-box">
                                     <strong>Saldo Inicial:</strong> <span id="total-start-balance"></span>
